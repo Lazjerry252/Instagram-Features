@@ -1,0 +1,161 @@
+body {
+  background: linear-gradient(-45deg, purple, black, rgb(118, 25, 25), #6744a4);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+  padding: 40px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+}
+
+.sign-up {
+    height: 40px;
+    color: white;
+    font-weight: 900;
+    font-size: 15px;
+    padding-bottom: 5px;
+    background-color: blue;
+    width: 200px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.30s, color 0.30s, opacity 0.20s;
+}
+.sign-up:hover{
+  background-color: yellow;
+  color: black;
+}
+.sign:active{
+  opacity: 0.5;
+}
+
+.welcome-div {
+  display: flex;
+  align-items: center;
+}
+
+.welcome{
+  font-family: Arial;
+  font-size: 50px;
+  color: white;
+  font-weight: 900;
+}
+.about {
+    max-width: 400px;
+    color: rgb(174, 254, 14);
+    font-size: 18px;
+}
+
+.main-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 60px;
+  border-radius: 30px;
+}
+.img {
+  height: 400px;
+  border-radius: 20px;
+}
+.text {
+  color: white;
+  font-family: Arial;
+}
+.visit {
+  color: rgb(156, 235, 0);
+  font-size: 18px;
+  margin-top: 0;
+}
+.feature1, .feature2 {
+  color: rgb(255, 255, 255);
+  font-family: Arial;
+  font-weight: 900;
+  font-size: 25px;
+}
+
+.text li {
+  margin-bottom: 15px;
+}
+span {
+  font-family: arial;
+  font-weight: 700;
+  color: rgb(176, 176, 244);
+}
+
+@media (max-width: 750px) {
+   body {
+    padding: 5px;
+   }
+   .welcome {
+     font-size: 40px;
+     margin-right: 5px;
+   }
+   .main-div {
+     display: grid;
+     grid-template-columns: 1fr;
+   }
+   .welcome-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   }
+   .sign-up {
+    width: 250px;
+   }
+
+   .sign-up-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   }
+   .section3 {
+    height: 100px;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 850px) {
+  body {
+    padding: 25px;
+   }
+   .main-div {
+     display: grid;
+     grid-template-columns: 1fr;
+   }
+   .welcome-div {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+   }
+   .sign-up {
+    width: 350px;
+   }
+
+   .sign-up-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+   }
+   .feature1, .feature2 {
+     font-size: 35px;
+   }
+   .text li {
+     font-size: 25px;
+   }
+   .about, .visit {
+     font-size: 30px;
+     font-family: Arial;
+   }
+   .section3 {
+     height: 150px;
+   }
+}
